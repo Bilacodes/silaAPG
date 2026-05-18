@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css/style.css">
 </head>
 
 <body>
@@ -38,7 +38,76 @@
             <div class="container">
                 <h1>Ajukan Layanan Akademik</h1>
                 <p class="section-desc">Lengkapi form di bawah untuk mengajukan layanan akademik Anda.</p>
-                <p><em>Form pengajuan akan tersedia pada tahap berikutnya.</em></p>
+
+                <!-- nama lengkap,nim,program studi,jenis layanan,tanggal pengajuan,keterangan -->
+                <!-- M10. Awal form -->
+                 <form action="#" target="_blank" method="post" class="form-card" >
+                    <fieldset>
+                        <legend>Data pengajuan</legend>
+
+                        <!-- input nama lengkap -->
+                         <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" required placeholder="Masukkan Nama Lengkap">
+                         </div>
+
+                         <!-- Nim dan program studi -->
+                          <div class="form-row">
+                            <!-- NIM -->
+                            <div class="form-group">
+                                <label for="nim">Nim</label>
+                                <input type="text" id="nim" required placeholder="contoh: 123456">
+                            </div>
+                        <!-- program studi -->
+                            <div class="form-group">
+                                <label for="prodi">Program studi</label>
+                            <div>
+                                <select id="prodi" name="prodi">
+                                    <option value="">--Pilih Program Studi--</option>
+                                    <option value="Sistem Informasi">Sistem Informasi</option>
+                                    <option value="Teknik Informatika">Teknik Informatika</option>
+                                    <option value="Teknologi Informasi">Teknologi Informasi</option>
+                                    <option value="Manajemen">Manajemen</option>
+                                    <option value="Akuntansi">Akuntansi</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- jenis layanan dan tanggal -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="jenis">Jenis Layanan</label>
+                                <select id="jenis" name="jenis">
+                                    <option value="">--Pilih Layanan--</option>
+                                    <option value="SKA">SKA - Surat aktif kuliah</option>
+                                    <option value="CAK">CAK - Cuti akademik</option>
+                                    <option value="TNM">TNM - Transkip Akademik</option>
+                                    <option value="PDA">PDA - Perubahan Data</option>
+                                </select>
+                            </div>
+
+                        <!-- Tanggal -->
+                        <div class="form-group">
+                            <label for="tanggal">Tanggal pengajuan</label>
+                            <input type="date" id="tanggal" name="tanggal">
+                        </div>
+                    </div>
+                    
+                         <!-- keterangan -->
+                        <div class="form-group">
+                            <label for="keterangan">Keterangan</label>
+                            <textarea id="keterangan" name="keterangan" rows="3" required placeholder="Jelaskan Pengajuan Anda"></textarea>
+                        </div>
+
+                        <!-- Buttom -->
+                         <div class="form-group">
+                            <button type="submit" class="btn btn-primary">🚀Ajukan Sekarang</button>
+                            <button type="reset" class="btn btn-outline">🔁Reset</button>
+                         </div>
+                </fieldset>
+            </form>
+
+                 <!-- Akhir form -->
             </div>
         </section>
     </main>
