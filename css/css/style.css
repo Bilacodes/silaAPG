@@ -596,3 +596,59 @@ legend {
     border: 1px solid #334155;
     background: none;
 }
+
+/* M11 */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* batas dempet dengan sekitarnya */
+    margin-top: 16px;
+    min-width: 600px;
+    /* lebar batas mutlak */
+}
+.data-table caption{
+    text-align: left;
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 12px;
+}
+.data-table th,
+.data-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #334155;
+    /* memberi garis bawah disetiap akhir barisan */
+}
+
+/* title */
+.data-table th {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    font-size: 0.85rem;
+    font-weight: 600px;
+    text-transform: uppercase;
+    /* mengubah text menajdi huruf besar */
+    letter-spacing: 0.5px;
+}
+.data-table td {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+/* zebra stripse */
+.data-table tbody tr:nth-child(even) {
+    background-color: rgba(30, 41, 59, 0.8);
+}
+
+/* row hover */
+.data-table tbody tr:hover {
+    background-color: #1e293b;
+}
+
+/* responsive table uk. layar maks 760px*/
+@media (max-width: 760px) {
+    .data-table {font-size: 0.8rem;}
+    .data-table th, .data-table td {
+        padding: 8px 10px;
+    }
+}
